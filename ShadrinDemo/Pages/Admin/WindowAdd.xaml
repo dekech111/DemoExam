@@ -1,0 +1,57 @@
+﻿<Window x:Class="ShadrinDemo.Pages.Admin.WindowAdd"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ShadrinDemo.Pages.Admin"
+        mc:Ignorable="d"
+        Title="Добавление" Height="450" Width="800" ResizeMode="NoResize">
+    <Grid Background="#FF349C3D">
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <StackPanel Orientation="Horizontal">
+
+                <!--Левый столбец-->
+                <StackPanel Margin="0 0 20 0">
+                    <TextBlock Text="Артикул"/>
+                    <TextBox x:Name="txbActicle" Height="30" Width="250"/>
+
+                    <TextBlock Text="Описание"/>
+                    <TextBox x:Name="txbDescription" Height="30" Width="250"/>
+
+                    <TextBlock Text="Производитель"/>
+                    <ComboBox x:Name="cmbManuf" Height="30" Width="250"/>
+
+                    <TextBlock Text="Действующая скидка"/>
+                    <TextBox x:Name="txbDiscoundAmount" Height="30" Width="250"/>
+
+                    <TextBlock Text="Поставщик"/>
+                    <ComboBox x:Name="cmbSupplier" Height="30" Width="250"/>
+                </StackPanel>
+
+
+                <!--Правый столбец-->
+                <StackPanel>
+                    <TextBlock Text="Наименование"/>
+                    <TextBox x:Name="txbName" Height="30" Width="250"/>
+
+                    <TextBlock Text="Категория"/>
+                    <ComboBox x:Name="cmbCategory" Height="30" Width="250"/>
+
+                    <TextBlock Text="Цена"/>
+                    <TextBox x:Name="txbCost" Height="30" Width="250"/>
+
+                    <TextBlock Text="КолВо"/>
+                    <TextBox x:Name="txbQuantityInStock" Height="30" Width="250"/>
+
+                    <TextBlock Text="Максимальная скидка"/>
+                    <TextBox x:Name="txbDiscountMax" Height="30" Width="250"/>
+                </StackPanel>
+            </StackPanel>
+            <TextBlock Text="Ед Измерения" Margin="140 0 0 0"/>
+            <TextBox x:Name="txbUnit" Height="30" Width="250"/>
+
+            <Button x:Name="btnAdd" Content="Добавить" Height="30"
+                    Width="200" Margin="0 10 0 0" Click="btnAdd_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
